@@ -19,7 +19,7 @@ def database_exists(host, user, password, db_name):
         conn.close()
         return db_name in databases
     except Error as e:
-        print("Error connecting to mySQL:", e   )
+        print("except mysql.connector.Error", e   )
         return False
 if __name__ == "__main__":
     exists = database_exists("localhost", "root", "and324292and", "alx_book_store")
