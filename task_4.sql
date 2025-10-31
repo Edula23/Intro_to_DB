@@ -6,7 +6,4 @@ alxdb = mysql.connector.connect(
     database="alx_book_store"
 )
 alxcursor = alxdb.cursor()
-alxcursor.execute("SELECT * FROM books")
-books = alxcursor.fetchall()
-for book in books:
-    print(book)
+alxcursor.execute("SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'alx_book_store' AND TABLE_NAME = 'Books';")
