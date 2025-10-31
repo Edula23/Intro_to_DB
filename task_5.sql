@@ -6,5 +6,5 @@ alxdb = mysql.connector.connect(
     database="alx_book_store"
 )
 alxcursor = alxdb.cursor()
-alxcursor.execute("INSERT INTO Customers (customer_id, customer_name, email, address) VALUES (1, 'Cole Baidoo', 'cbaidoo@sandtech.com', '124 Happiness Ave.');")
+alxcursor.execute("INSERT INTO customers (customer_id, customer_name, email, address) VALUES (1, 'Cole Baidoo', 'cbaidoo@sandtech.com', '124 Happiness Ave.');")
 alxdb.commit()
